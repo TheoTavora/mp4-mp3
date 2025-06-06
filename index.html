@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Conversor MP4 para MP3 Online | Rápido e Gratuito</title>
+  <meta name="description" content="Converta vídeos MP4 em arquivos MP3 com facilidade e rapidez. Ferramenta gratuita, online e sem necessidade de cadastro." />
+  <meta name="keywords" content="converter mp4 para mp3, mp4 para mp3 online, conversor de vídeo, extrair áudio, mp3, ferramenta gratuita" />
+  <meta name="author" content="Théo Tavora" />
+  
+  <!-- SEO para Redes Sociais (Open Graph / Facebook) -->
+  <meta property="og:title" content="Conversor MP4 para MP3 Online" />
+  <meta property="og:description" content="Ferramenta gratuita para converter vídeos MP4 em arquivos MP3 diretamente do navegador." />
+  <meta property="og:image" content="https://seudominio.com/imagem-preview.png" />
+  <meta property="og:url" content="https://seudominio.com/" />
+  <meta property="og:type" content="website" />
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Conversor MP4 para MP3 Online" />
+  <meta name="twitter:description" content="Converta vídeos MP4 em MP3 facilmente, direto do navegador e sem custo." />
+  <meta name="twitter:image" content="https://seudominio.com/imagem-preview.png" />
+
+  <link rel="stylesheet" href="/index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+ 
+   <form action="http://localhost:3000/upload" method="post" enctype="multipart/form-data" action="/upload">
+    <h1>Converta <span>MP4</span> para <span>MP3!</span></h1>
+    <p>Transforme seus vídeos em áudio de alta qualidade em segundos.<br/> Rápido, seguro e totalmente gratuito.</p>
+    <label class="upload-area" for="file-input">
+      <i class="fas fa-upload"></i>
+      <h2 id="fileNameDisplay">Arraste seu arquivo MP4 aqui</h2>
+      <p>ou clique para selecionar</p>
+    </label>
+    <input type="file" id="file-input" name="video" accept="video/mp4" required> 
+    <button type="submit" class="submit-btn">
+        Converter
+    </button>
+  </form>
+   
+   <script>
+
+    const fileInput = document.getElementById('file-input')
+    const fileNameDisplay = document.getElementById('fileNameDisplay')
+
+    fileInput.addEventListener('change', () => {
+      const file = fileInput.files[0]
+      if (file) {
+        fileNameDisplay.textContent = `Selecionado: ${file.name}`
+      } else {
+        fileNameDisplay.textContent = 'Nenhum arquivo selecionado'
+      }
+    });
+
+   </script>
+
+   <script src="https://kit.fontawesome.com/YOUR_KIT_CODE.js" crossorigin="anonymous"></script>
+</body>
+</html>

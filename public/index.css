@@ -1,0 +1,97 @@
+body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #4e0fa2, #7e38d4);
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form h1 {
+    color: white;
+    font-size: clamp(2.5rem, 4vw, 7rem);
+    margin-bottom: 3%;
+}
+
+form p {
+    color: rgb(165, 165, 165);
+    text-align: center;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 5%;
+    font-size: clamp(1rem, 1.2vw, 2rem);
+}
+
+form h1 span {
+    background-image: linear-gradient(135deg, rgb(45, 199, 204), rgb(209, 66, 66)); /* Exemplo de gradiente */
+    -webkit-background-clip: text; /* Para navegadores baseados no WebKit */
+    background-clip: text; /* Para outros navegadores */
+    -webkit-text-fill-color: transparent; /* Transparente para permitir que o gradiente apareça */
+    text-emphasis-color: transparent;
+}
+
+    .upload-area {
+      background-color: rgba(255, 255, 255, 0.05);
+      border: 2px dashed #b3b3b3;
+      border-radius: 12px;
+      padding: 40px;
+      text-align: center;
+      width: 400px !important;
+      display: flex;
+      flex-direction: column;
+      color: #fff;
+      cursor: pointer;
+      transition: border-color 0.3s ease;
+    }
+
+    .upload-area:hover {
+      border-color: #ffffff;
+    }
+
+    .upload-area i {
+      font-size: 40px;
+      color: #fff;
+      margin-bottom: 20px;
+      display: block;
+    }
+
+    .upload-area h2 {
+      margin: 0;
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    .upload-area p {
+      margin: 8px 0 20px;
+      font-size: 14px;
+      color: #ccc;
+    }
+
+    .submit-btn {
+      background: linear-gradient(90deg, #3b82f6, #a855f7);
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      font-size: clamp(1.3rem, 1vw, 1.5rem);
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+      margin-top: 2%;
+    }
+
+    .submit-btn:hover {
+      opacity: 0.9;
+    }
+
+    #file-input {
+      display: none;
+    }
